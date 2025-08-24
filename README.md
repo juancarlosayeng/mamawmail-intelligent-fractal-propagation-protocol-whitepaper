@@ -1,3 +1,28 @@
+UPDATED: August 24 2025
+Part of the Mamawmail Research Initiative – theoretical foundation of IFPP.
+-----------------------------------------------------
+## Mamawmail Research Initiative – License Overview
+
+The Mamawmail Research Initiative is a combined effort of theoretical research,  
+system architecture design, and practical software implementation.  
+
+It is organized into three connected repositories, each with its own license.  
+The whitepapers provide the **research foundation** and theoretical framework,  
+while the implementation repository translates those ideas into a working system.  
+
+| Repository                                                | License                              | Purpose                                                   |
+| --------------------------------------------------------- | ------------------------------------ | --------------------------------------------------------- |
+| **mamawmail-intelligent-propagation-protocol-whitepaper** | CC BY-SA 4.0 (open research license) | Formal description of the Intelligent Fractal Propagation Protocol (IFPP), mathematical models, and comparisons |
+| **mamawmail-system-whitepaper**                           | AGPL-3.0 (Community) + Commercial    | Broader system design, AI integrations, and saturation singularity theory |
+| **mamawmail**                                             | AGPL-3.0 (Community) + Commercial    | Practical implementation of the Mamawmail system (Community & Enterprise editions) |
+
+
+
+--------------------------------------------------
+
+
+
+
 # mamawmail-intelligent-propagation-protocol-whitepaper
 Core research and development repository for the Mamawmail system – a decentralized, intelligent fractal propagation protocol (IFPP) for peer-to-peer communication.  Contains formal documentation, simulations, and mathematical models for message propagation, delivery assurance, and network resilience.
 
