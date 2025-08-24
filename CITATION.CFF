@@ -6,6 +6,9 @@ authors:
     given-names: "Juan Carlos"
     affiliation: "Mamawmail Research Initiative, Bacolod City, Philippines"
     orcid: "https://orcid.org/0000-0000-0000-0000"   
+contact:
+  - name: "Mamawmail Research Initiative"
+    email: "jcgayeng@protonmail.com"
 version: "1.0.0"
 date-released: "2025-08-24"
 url: "https://github.com/juancarlosayeng/mamawmail-intelligent-propagation-protocol-whitepaper"
