@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "mamawmail-intelligent-propagation-protocol-whitepaper"
+message: "If you use this work, please cite it using the metadata below."
+authors:
+  - family-names: "Ayeng"
+    given-names: "Juan Carlos"
+    affiliation: "Mamawmail Research Initiative, Bacolod City, Philippines"
+    orcid: "https://orcid.org/0000-0000-0000-0000"   
+version: "1.0.0"
+date-released: "2025-08-24"
+url: "https://github.com/juancarlosayeng/mamawmail-intelligent-propagation-protocol-whitepaper"
+repository-code: "https://github.com/juancarlosayeng/mamawmail-intelligent-propagation-protocol-whitepaper"
+keywords:
+  - decentralized communication
+  - intelligent fractal propagation
+  - peer-to-peer
+  - network resilience
+  - Mamawmail
+license: "CC-BY-SA-4.0"
