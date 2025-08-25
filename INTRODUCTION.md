@@ -86,5 +86,64 @@ This separation ensures **conceptual clarity**, **rigorous evaluation**, and eas
 **GitHub:** [https://github.com/juancarlosayeng](https://github.com/juancarlosayeng)  
 **Email:** jcgayeng@protonmail.com  
 
+### Why IFPP Matters  
+
+Conventional protocols like **TCP/IP** are based on *static ports, dumb packets, and centralized reliability*.  
+The **Intelligent Fractal Propagation Protocol (IFPP)** departs radically from this model:  
+
+#### Key Innovations & Differentiations  
+
+**1. Adaptive Multiplexing**  
+- TCP/IP: Multiplexing via fixed port numbers.  
+- IFPP: Multiplexing is **context-aware** — each packet carries `Mode`, `Priority`, and `Propagation State`.  
+- Result: Flows are differentiated not only by application, but by delivery requirements (urgent vs. background, fractal vs. singular).  
+
+**2. Encapsulation Model (3 Layers)**  
+- **Layer 1: Device Identity & Privacy** – UUID-based device IDs, built-in encryption, unlinkability.  
+- **Layer 2: Swarm Intelligence** – Metadata for propagation, “been-here” markers, fractal phase, hashes.  
+- **Layer 3: Payload** – Fully encrypted content, opaque to relays, future-proof.  
+- Result: Each packet behaves like a **mini-robot courier** that knows where it has been, adapts strategy, and cannot be tampered with.  
+
+**3. Reliability Without TTL**  
+- TCP/IP: Packets expire via TTL; reliability restored only via retransmission.  
+- IFPP: **No TTL**. Packets persist until delivery.  
+- Loops prevented via “been-here” markers.  
+- Result: Messages are not discarded arbitrarily — persistence is *sacred*.  
+
+**4. Intelligent Handoff Protocol**  
+- Candidate discovery via lightweight signals (“Angels”).  
+- Full payload sent only after viability confirmed.  
+- Handoff success triggers cleanup of old copy.  
+- Result: Scalability + cleanliness: only one *live payload copy* remains active.  
+
+**5. Fractal-to-Singular Transition**  
+- Early propagation = fractal exploration (redundancy ensures reachability).  
+- Saturation point = transition to single-copy mode.  
+- Result: Network achieves balance: delivery is guaranteed without flooding.  
+
+**6. Philosophical & Structural Shift**  
+- TCP/IP: *User-centric, server-mediated, dumb packets, smart endpoints.*  
+- IFPP: *Device-centric, swarm-mediated, smart packets, distributed decision-making.*  
+- Analogy:  
+  - TCP/IP = blind couriers passing sealed envelopes until they reach the post office.  
+  - IFPP = **self-guiding couriers** who record their paths, collaborate, and never stop until delivery.  
+
+**7. Semantic Layer Inversion**  
+- What others call “crawlers” or “daemons” in dark corners of the network, IFPP calls **Angels**.  
+- **Angelic Army** = candidate signals exploring paths.  
+- **Angel Gabriel** = the final handoff courier who does not rest until successful delivery.  
+- Result: Not only a technical inversion, but a **cultural inversion** — networking reimagined as enlightened persistence.  
+
+---
+
 ### Contributions  
-Contributions are welcome in the future. At this stage, the project is focused on defining the starting point and core structure. Please stay tuned for upcoming contribution guidelines once the initial design is more stable.  
+
+At this stage, the project is focused on **defining the starting point and core structure**.  
+Contributions are welcome in the near future, particularly in:  
+
+- Protocol engineering (C, Python, Android).  
+- Distributed systems research (P2P, swarm intelligence).  
+- Testing infrastructure & equipment (low-power devices, mesh networks).  
+- Documentation, wiki, and visualization tools.  
+
+Please stay tuned for formal contribution guidelines once the initial design stabilizes.  
