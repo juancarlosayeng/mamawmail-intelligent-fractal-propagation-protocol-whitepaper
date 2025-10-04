@@ -1,3 +1,14 @@
+UPDATED: October 1 2025
+
+# Submitted New IFPP Whitepaper to NLNET. 
+- Separated IFPP from Mamawmail into its own Whitepaper.
+<br><br>
+- Github Repo about to be updated after finishing Mawmawmail Whitepaper.
+<br><br>
+
+-----------------------------------------------------
+
+
 UPDATED: August 24 2025
 
 Part of the Mamawmail Research Initiative – theoretical foundation of IFPP.
