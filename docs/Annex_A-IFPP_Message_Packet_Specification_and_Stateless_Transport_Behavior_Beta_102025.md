@@ -1,18 +1,13 @@
-yaml
+> **Annex A — IFPP Message Packet Specification and Stateless Transport Behavior**  
+> *The Intelligent Fractal Propagation Protocol (IFPP) — A Protocol Originating from the MAMAWMAIL Project Whitepaper*  
+> **Author:** Engr. Juan Carlos G. Ayeng  
+> **Location:** Bacolod City, Philippines  
+> **Date:** October 15, 2025  
+> **Version:** 1.0  
+> **License:** CC BY-NC-ND 4.0  
+> **Description:** This annex defines the IFPP message packet structure and stateless transport behavior for use in the MAMAWMAIL decentralized communication system. It serves as a canonical developer and evaluator reference for NLnet and open research review.
+---
 
----
-title: "Annex A — IFPP Message Packet Specification and Stateless Transport Behavior"
-subtitle: "The Intelligent Fractal Propagation Protocol (IFPP) A Protocol Originating from the MAMAWMAIL Project Whitepaper"
-author: "Engr. Juan Carlos G. Ayeng"
-location: "Bacolod City, Philippines"
-date: "October 15, 2025"
-version: "1.0"
-license: "CC BY-NC-ND 4.0" [Temporary during Development]
-description: >
-  This annex defines the IFPP message packet structure and stateless transport behavior 
-  for use in the MAMAWMAIL decentralized communication system. It serves as a 
-  canonical developer and evaluator reference for NLnet and open research review.
----
 
 # Annex A — IFPP Message Packet Specification and Stateless Transport Behavior
 
