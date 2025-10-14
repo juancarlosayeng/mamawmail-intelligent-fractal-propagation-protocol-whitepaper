@@ -4,9 +4,12 @@
 > **Location:** Bacolod City, Philippines  
 > **Date:** October 15, 2025  
 > **Version:** 1.0  
-> **License:** CC BY-NC-ND 4.0  [Temporary during Development]
+> **License:** CC BY-NC-ND 4.0  
+> [Temporary during Development]  
+>
 > **Description:** This annex defines the IFPP message packet structure and stateless transport behavior for use in the MAMAWMAIL decentralized communication system. It serves as a canonical developer and evaluator reference for NLnet and open research review.
 ---
+<hr>
 
 
 # Annex A — IFPP Message Packet Specification and Stateless Transport Behavior
