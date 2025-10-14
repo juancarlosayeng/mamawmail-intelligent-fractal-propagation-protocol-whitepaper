@@ -1,3 +1,5 @@
+yaml
+
 ---
 title: "Annex A — IFPP Message Packet Specification and Stateless Transport Behavior"
 subtitle: "The Intelligent Fractal Propagation Protocol (IFPP) A Protocol Originating from the MAMAWMAIL Project Whitepaper"
