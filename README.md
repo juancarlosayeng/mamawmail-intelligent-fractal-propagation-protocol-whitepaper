@@ -12,7 +12,7 @@ UPDATED: October 28 2025
 2. [ ] Mamawmail Whitepaper - [ONOING/Unfinished](https://github.com/juancarlosayeng/mamawmail-intelligent-fractal-propagation-protocol-whitepaper/blob/main/docs/MAMAWMAIL%20-%20%20A%20Decentralized%20Communication%20System%20Updated%20Whitepaper%20%E2%80%94%20September%2027%202025%20(Original%20June%2020%202025)%20-%20Engr%20Juan%20Carlos%20G%20Ayeng%20-%20Bacolod%20City%20-%20Philippines.docx)
 
  <br><br><br>
- SAMPLE ONGOING RESEARCH
+ SAMPLE ONGOING RESEARCH - adding more annexes, sections and research
 ## ANNEX-B Table: Projected Computational and Transmission Costs
 
 This section quantifies the expected energy, storage, and bandwidth requirements during a full IFPP hop cycle between two devices.
@@ -38,8 +38,60 @@ Values are averages designed for modeling and comparative evaluation with TCP/IP
 | 15 – Self-Deletion            | Memory release and cleanup                  |    32 KB RAM                                                 | -                      | 0.5 ms           | Garbage collection event         |
 | 16 – Cycle Re-Instantiation   | Angel reload on next device                 | -                                                            | 64 KB RAM + 0.5 MB I/O | 2 ms             | Fresh process spawn              |
 
- 
 
+### Aggregate Resource Cost per Hop (One Device Pair)
+| Metric                                         | Device A (Sender) | Device B (Receiver) |     Combined Total     |
+|------------------------------------------------|-------------------|---------------------|------------------------|
+|    Storage footprint (volatile + temp disk)    | ≈ 2.8 MB          | ≈ 1.1 MB            |    ≈ 3.9 MB            |
+| Bandwidth usage (TX + RX combined)             | ≈ 25 KB           | ≈ 25 KB             | ≈ 50 KB per hop        |
+| Energy draw                                    | ≈ 0.07 Wh         | ≈ 0.05 Wh           |    ≈ 0.12 Wh total     |
+| Compute time (active CPU)                      | ≈ 70 ms           | ≈ 40 ms             | ≈ 110 ms total         |
+
+<br><br><br><br>
+## TCP/IP Transmission Baseline (10 KB Payload Example)
+| Stage                    | Process                              | Device A (Sender) | Device B (Receiver) | Typical Duration |
+|--------------------------|--------------------------------------|-------------------|---------------------|------------------|
+| 1 – 3-Way Handshake      | SYN, SYN-ACK, ACK (3 packets × 60 B) | 180 B TX/RX       | 180 B TX/RX         | 15–30 ms         |
+| 2 – TLS Handshake        | ECDHE + Certificate exchange         | 4 KB TX + 4 KB RX | 4 KB TX + 4 KB RX   | 120–200 ms       |
+| 3 – Payload Transmission | 10.5 KB TX                           | 10.5 KB RX        | 10–20 ms            |                  |
+| 4 – ACK & Keepalive      | 1 KB TX / RX                         | 1 KB TX / RX      | 5 ms                |                  |
+| 5 – Session Close        | 0.5 KB TX / RX                       | 0.5 KB TX / RX    | 5 ms                |                  |
+
+### Aggregate Cost (10 KB TCP Payload)
+| Metric                             | Device A (Sender) | Device B (Receiver) |     Combined Total     |
+|------------------------------------|-------------------|---------------------|------------------------|
+| Bandwidth usage (over the air)     | 25 KB             | 25 KB               | ≈ 50 KB total          |
+| Bandwidth usage (TX + RX combined) | 150–260 ms        | -                   | ≈ 200 ms average       |
+| Energy draw                        | ≈ 0.30 Wh         | ≈ 0.25 Wh           | ≈ 0.55 Wh total        |
+| Socket duration                    | 250 ms            | 250 ms              | -                      |
+
+### Analytical Comparison
+| Category           | IFPP [Per Hop]             | TCP/IP [10kb Message] | Relative Efficiency               |
+|--------------------|----------------------------|-----------------------|-----------------------------------|
+| Storage (volatile) | 3.9 MB                     | 4.0 MB                | ≈ Parity                          |
+| Energy Draw        | 0.12 Wh                    | 0.55 Wh               | 4.5× more efficient               |
+| Latency            | 110 ms                     | 200 ms                | ≈ 2× faster                       |
+| Bandwidth          | 50 KB                      | 50 KB                 | Equal (IFPP includes AI metadata) |
+| Security Overhead  | Self-authenticating digest | TLS cert chain        | ≈ 80% lighter                     |
+
+<br>
+
+## Interpretive Commentary  
+
+### Compute Efficiency:
+> IFPP’s event-driven architecture replaces persistent sockets with short-lived microtransactions, cutting power consumption by up to 75%.  
+
+### Reduced Latency:
+> Hop decisions overlap with Gabriel synchronization, enabling sub-100 ms behavior within three-hop swarm radius.  
+
+### Stable Memory Pressure:  
+> Because each angelic module self-deletes post-hop, per-device memory load remains constant even during heavy network churn.
+
+### Security Simplicity:
+> Eliminates TLS certificate dependencies — authentication occurs directly through device key digests.  
+
+### Scalability Trend:
+> As devices adopt multi-core AI accelerators (ARMv9 / RISC-V), IFPP’s efficiency gains scale sub-linearly with hop count, meaning greater network size yields higher relative throughput per watt.
 
 
 <br><br><br><br>
@@ -101,9 +153,6 @@ while the implementation repository translates those ideas into a working system
 | **mamawmail-intelligent-propagation-protocol-whitepaper** | CC BY-SA 4.0 (open research license) | Formal description of the Intelligent Fractal Propagation Protocol (IFPP), mathematical models, and comparisons |
 | **mamawmail-system-whitepaper**                           | AGPL-3.0 (Community) + Commercial    | Broader system design, AI integrations, and saturation singularity theory |
 | **mamawmail**                                             | AGPL-3.0 (Community) + Commercial    | Practical implementation of the Mamawmail system (Community & Enterprise editions) |
-
-
-
 
 <br><br><br><br>
 --------------------------------------------------
