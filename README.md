@@ -1,6 +1,6 @@
 UPDATED: October 28 2025
 
-### IFPP + MAMAWMAIL WHITEPAPER CURRENT STRUCTURE 
+# IFPP + MAMAWMAIL WHITEPAPER STRUCTURE [Current Version] 
 
  
 1. [x] [Intelligent Fractal Propagation Protocol Whitepaper](https://github.com/juancarlosayeng/mamawmail-intelligent-fractal-propagation-protocol-whitepaper/blob/main/docs/The%20Intelligent%20Fractal%20Propagation%20Protocol%20(IFPP)%20A%20Protocol%20Originating%20from%20the%20MAMAWMAIL%20Project%20Whitepaper%20%E2%80%94%20September%2022%202025%20-%20Engr%20Juan%20Carlos%20G%20Ayeng%20-%20Bacolod%20City%20-%20Philippines.pdf) 
@@ -11,14 +11,40 @@ UPDATED: October 28 2025
       
 2. [ ] Mamawmail Whitepaper - [ONOING/Unfinished](https://github.com/juancarlosayeng/mamawmail-intelligent-fractal-propagation-protocol-whitepaper/blob/main/docs/MAMAWMAIL%20-%20%20A%20Decentralized%20Communication%20System%20Updated%20Whitepaper%20%E2%80%94%20September%2027%202025%20(Original%20June%2020%202025)%20-%20Engr%20Juan%20Carlos%20G%20Ayeng%20-%20Bacolod%20City%20-%20Philippines.docx)
 
-   
+ <br><br><br>
+ SAMPLE ONGOING RESEARCH
+## ANNEX-B Table: Projected Computational and Transmission Costs
+
+This section quantifies the expected energy, storage, and bandwidth requirements during a full IFPP hop cycle between two devices.
+The estimates are based on current-generation mobile hardware (ARM A53–A76 class CPUs, 4 GB RAM, 10 MB/s equivalent link) and optimized cryptographic operations (SHA3–256 and XChaCha20-Poly1305).
+Values are averages designed for modeling and comparative evaluation with TCP/IP message delivery.
+ <br>
+| Stage                         | Description                                 | Device A (Sender)                                            | Device B (Receiver)    | Typical Duration | Notes                            |
+|-------------------------------|---------------------------------------------|--------------------------------------------------------------|------------------------|------------------|----------------------------------|
+| 1 – Payload Receipt           | App → Team Leader message load              |    8 KB RAM, 0.3 MB I/O                                      | -                      | 1ms              | No crypto; memory copy only      |
+| 2 – Intel ↔ Gabriel           |    Candidate discovery, AI digest   sync    | 0.5 KB TX / 1 KB RX (≈1.5 KB total)                          | 0.5 KB RX / 1 KB TX    | 2–5 ms           |    Short JSON digest exchange    |
+| 3 – Liaison Device Engagement | Candidate signal probe                      | < 2 KB RF signal frames                                      | 2 KB probe response    | 3-7 ms           | BLE/Wi-Fi beacon or UDP ping     |
+| 4 – Point Binding             | Object binding + hash computation           | 32 KB RAM (SHA3) ≈ 2 ms CPU                                  | -                      | 2 ms             | 0.002 Wh compute cost            |
+| 5 – Heavy Weapons Security    | Security update & verification              | 1 MB read + 64 KB write (≈2 MB I/O)                          | -                      | 15-25 ms         | Most expensive CPU stage (8%)    |
+| 6 – Pre-Interaction Sync      | Angel team coordination                     | 128 KB RAM                                                   | 128 KB RAM             | 1 ms             | Negligible bandwidth             |
+| 7 – Candidate Evaluation      | 3-node scoring and prioritization           |    1.5 MB RAM compute                                        | -                      | 5 ms             | Local AI inference vectorization |
+| 8 – Recon Scouting            | Probe and verification on 3 targets         | 3 × 512 B TX                                                 | 3 × 512 B RX           | 8 ms             | Maintains micro-links            |
+|    9 – Hop Decision           | Team Leader + Gabriel evaluation            | 64 KB RAM                                                    | -                      | <1 ms            | Decision matrix merge            |
+| 10 – Security Instantiation   | Pre-arrival sandbox deploy                  | -                                                            | 0.5 MB disk write      | 5 ms             | Security sweep initialization    |
+| 11 – Message Transfer         | Three-burst transmission                    | 2 KB (Ephemeral) + 4 KB (Metadata) + 10 KB (Core) = 16 KB TX | 16 KB RX               | 1-2 ms           | One-shot burst; no ACK cycle     |
+| 12 – Post-Hop Deploy          | Angel re-spawn logic                        | 16 KB RAM                                                    | 32 KB RAM              | 2ms              | Code copy + hash verify          |
+| 13 – Hop Confirm ↔ Gabriel    |    Hop status confirmation                  | 1 KB TX / RX                                                 | 1 KB TX / RX           | 1 ms             | Swarm ledger update              |
+| 14 – All-Clear Signal         | Passive Gabriel confirmation                | -                                                            | < 0.1 KB RX            | Variable         | Triggered remotely               |
+| 15 – Self-Deletion            | Memory release and cleanup                  |    32 KB RAM                                                 | -                      | 0.5 ms           | Garbage collection event         |
+| 16 – Cycle Re-Instantiation   | Angel reload on next device                 | -                                                            | 64 KB RAM + 0.5 MB I/O | 2 ms             | Fresh process spawn              |
+
  
 
 
 
-
+<br><br><br><br>
 <hr>
-
+<br><br><br><br>
 UPDATED: October 14 2025
 
 🧩 New Annex Added 
@@ -78,6 +104,8 @@ while the implementation repository translates those ideas into a working system
 
 
 
+
+<br><br><br><br>
 --------------------------------------------------
 
 
